@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: content-box;
+        }
+        body {
+            font-family: Arial;
+            background-image: url(../5767.jpg);
+            background-size: 100%;
+        }
+
+        #menu {
+            height: 40px;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            background-color: black;
+            border: 1px solid #CDCDCD;
+            margin-top: 0px;
+        }
+
+        #menu ul, #menu li {
+            padding: 0;
+            margin: 0;
+        }
+
+        #menu li {
+            position: relative;
+            float: left;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #menu li a {
+            width: 150px;
+            height: 40px;
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            /*line-height: 2px;*/
+            background-color: black;
+            color: white;
+        }
+
+
+        #menu ul ul li a {
+            width: 150px;
+            text-align: center;
+            padding-left: 10px;
+            background-color: black;
+        }
+
+        #menu li a:hover {
+            background-color: black;
+        }
+
+        #menu li li {
+            width: 150px;
+        }
+
+        #menu ul ul {
+            position: absolute;
+            top: 30px;
+            left: 0px;
+            display: none;
+            background-color: black;
+            width: 200px;
+        }
+
+        #menu ul li:hover ul {
+            display: block;
+        }
+
+
+        #tim {
+            float: right;
+            padding: 10px 20px;
+            background-color: black;
+            border: none;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 1px 2px;
+            cursor: pointer;
+        }
+
+        .truyen {
+            background-color: greenyellow;
+
+        }
+
+    </style>
+
+</head>
+<body>
+
+
+<div id="menu">
+    <ul>
+        <li><a href="#">Truyện Ngắn </a>
+            <ul class="truyen">
+                <li><a href="#">Gia Đình</a></li>
+                <li><a href="#">Cuộc sống</a></li>
+                <li><a href="#">Tản Mạn </a></li>
+
+            </ul>
+        </li>
+
+
+        <li id="menu2"><a href="#">Truyện Dài</a>
+            <ul class="truyen">
+                <li><a href="#">Kinh dị</a></li>
+                <li><a href="#">Trinh Thám</a></li>
+
+            </ul>
+        </li>
+
+        <div id="tim">
+            <button id="search"><input type="text">Search</button>
+        </div>
+    </ul>
+
+</div>
+
+
+</body>
+</html>

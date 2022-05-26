@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var book_1 = require("./book");
+var BookManager_1 = require("./BookManager");
+var book1 = new book_1.Book("B002", "Lập trình java");
+var book2 = new book_1.Book("B003", "Lập trình PHP");
+var book3 = new book_1.Book("B004", "Lập trình Ruby");
+var bookManager = new BookManager_1.BookManager();
+bookManager.addBook(book1);
+bookManager.addBook(book2);
+bookManager.addBook(book3);
+bookManager.update("B002", "lập trình python");
+console.log(bookManager.getList());

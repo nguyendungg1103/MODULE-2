@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var TH_Product_1 = require("./TH-Product");
+var ProductManager_1 = require("./ProductManager");
+var mobile1 = new TH_Product_1.Product("iphone", 15000);
+var mobile2 = new TH_Product_1.Product("samsung", 16000);
+var ProductManager1 = new ProductManager_1.ProductManager();
+ProductManager1.setAdd = mobile1;
+ProductManager1.setAdd = mobile2;
+console.log(ProductManager1.getAll);

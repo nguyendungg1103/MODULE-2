@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Country_1 = require("./Country");
+var SeaGame_1 = require("./SeaGame");
+var vn = new Country_1.Country("VN", 10, 11, 14);
+var tl = new Country_1.Country("TL", 15, 13, 14);
+var hq = new Country_1.Country("HQ", 12, 13, 13);
+var nb = new Country_1.Country("NB", 12, 13, 13);
+var seaGame = new SeaGame_1.SeaGame();
+seaGame.add(vn, tl, hq, nb);
+// console.log(seaGame.showAll());
+console.log(seaGame.bblSort());

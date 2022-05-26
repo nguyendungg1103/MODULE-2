@@ -1,0 +1,13 @@
+.container{
+    magin: auto;
+    width: 70%;
+
+
+}
+#Element {
+    font-style : inherit;
+}
+body{
+    text-identation: none;
+    color: cornflowerblue;
+}

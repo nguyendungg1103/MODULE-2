@@ -1,0 +1,21 @@
+import {Circle} from "./Circle";
+let circle : Circle = new Circle(3.5,"blue",false);
+console.log(circle);
+console.log(circle.getArea());
+console.log(circle.getPerimeter());
+console.log(circle.toString());
+import {Rectangle} from "./Retangle";
+let rectangle: Rectangle = new Rectangle(2.8,3.8,"orange",true);
+console.log(rectangle);
+console.log(rectangle.getArea());
+console.log(rectangle.getPerimeter());
+console.log(rectangle.toString());
+import {Shape} from "./shape";
+let shape: Shape = new Shape("blue", false);
+console.log(shape);
+console.log(shape.toString());
+import {Square} from "./Square";
+let square : Square = new Square(5.8,"yellow",true);
+console.log(square);
+console.log(square.toString());
+

@@ -1,0 +1,24 @@
+var SelectionSort = /** @class */ (function () {
+    function SelectionSort() {
+    }
+    SelectionSort.selectionSort = function (list) {
+        for (var i = 0; i < list.length - 1; i++) {
+            var currentMin = list[i];
+            var currentMinIndex = i;
+            for (var j = i + 1; j < list.length; j++) {
+                if (currentMin > list[j]) {
+                    currentMin = list[j];
+                    currentMinIndex = j;
+                }
+            }
+            if (currentMinIndex != i) {
+                list[currentMinIndex] = list[i];
+                list[i] = currentMin;
+            }
+        }
+    };
+    SelectionSort.list = [1, 9, 4.5, 6.6, 5.7, -4.5];
+    return SelectionSort;
+}());
+export { SelectionSort };
+//# sourceMappingURL=SelectionSort.js.map
